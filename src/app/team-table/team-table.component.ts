@@ -11,6 +11,7 @@ import { Countries } from '../interfaces/player';
   styleUrls: ['./team-table.component.scss']
 })
 export class TeamTableComponent implements OnInit {
+  
    public teams$: Observable<Team[]>;
    public tableHeaders = TeamsTableHeaders;
   constructor(private teamService:TeamService) {
